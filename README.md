@@ -1,6 +1,16 @@
 # Eyrie
 
-App Android pessoal que lê e grava bibliotecas do Eagle. Roda só num Galaxy S23 Ultra.
+Eyrie é um app Android pessoal que lê e grava bibliotecas do Eagle. Ele sincroniza com S3 e B2 (OneDrive e Dropbox vêm depois) e usa IA para organizar e buscar. Roda só num Galaxy S23 Ultra.
+
+## Referências
+
+- [Plano de projeto](https://claude.ai/artifact/MfZ2k1Pfe5vFBYvxvyr7BW). Resumo para o código em `docs/plans/plano-resumo.md`.
+- [Design system](https://claude.ai/artifact/MpVMFsgMowKLUFmYD6r2qZ).
+- [Canvas de telas "Conceitos de interface v1"](https://claude.ai/artifact/WJmkW4Xy4NXeaPW3oWGZ9Y).
+- [Issues](https://github.com/alessandrocaetanob/eyrie-app/issues) e [marcos](https://github.com/alessandrocaetanob/eyrie-app/milestones), um marco por fase.
+- Formato `.library` do Eagle: `docs/formato-eagle.md`.
+
+Telas novas seguem a regra de ouro: uma issue com o rótulo `interface` e o desenho no corpo, e código só depois do rótulo `aprovado`.
 
 ## Build
 
