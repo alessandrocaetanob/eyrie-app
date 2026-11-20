@@ -10,7 +10,7 @@ São as regras que o código mantém em qualquer fase.
 - O app não apaga objetos no provedor. A interface de armazenamento não tem operação de apagar.
 - O app só grava um arquivo depois de conferir que a versão no provedor é a que ele leu: na própria gravação, onde o provedor aceita, ou logo depois, pelo histórico de versões. Nenhuma regra deixa uma versão vencer a outra sem você escolher.
 - Campos que o app não conhece num JSON do Eagle são preservados na regravação.
-- Só o módulo `formato` lê e grava arquivos do Eagle, e só o módulo `armazenamento` e o adaptador da pasta do aparelho, em `armazenamento-local`, falam com provedores. As telas não usam nenhum dos dois diretamente.
+- Só o módulo `formato` lê e grava arquivos do Eagle, e só o módulo `armazenamento` e o adaptador da pasta do aparelho, em `armazenamento-local`, falam com provedores. As telas não usam nenhum deles diretamente.
 - Nada que a IA produz é gravado na biblioteca sem aceite. Sugestões pendentes e a marca de origem "gerada por IA" ficam só no índice e se perdem se ele for reconstruído.
 
 ## Módulos
