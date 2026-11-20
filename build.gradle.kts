@@ -50,7 +50,14 @@ subprojects {
             targetCompatibility = JavaVersion.VERSION_17
         }
         extensions.configure<KotlinJvmProjectExtension> {
-            compilerOptions.jvmTarget = JvmTarget.JVM_17
+            compilerOptions {
+                jvmTarget = JvmTarget.JVM_17
+                // Limita a API do JDK a 17: o JDK 25 do build tem metodos que nao existem no Android.
+                freeCompilerArgs.add("-Xjdk-release=17")
+            }
+        }
+        tasks.withType<JavaCompile>().configureEach {
+            options.release = 17
         }
     }
 }

@@ -30,6 +30,6 @@ O APK sai em `app/build/outputs/apk/debug/`. Crie `local.properties` com `sdk.di
 
 `armazenamento` e `indice` são Kotlin/JVM porque um módulo Kotlin/JVM (`sincronizacao`) não resolve dependência de biblioteca Android.
 
-## Pendente
+## Versão do Android
 
-`minSdk` está em 36 como valor provisório (`gradle/libs.versions.toml`). Falta conferir a versão do Android no S23 Ultra e ajustar.
+`minSdk` e `targetSdk` são 37 (`gradle/libs.versions.toml`). É a versão instalada no aparelho: Galaxy S23 Ultra (SM-S918B), Android 17 (API 37), One UI 9.0.
