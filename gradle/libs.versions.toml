@@ -1,0 +1,33 @@
+[versions]
+# Android SDK. minSdk e a versao instalada no Galaxy S23 Ultra (SM-S918B): Android 17, API 37 (conferido no aparelho).
+# targetSdk nao pode ficar abaixo do minSdk.
+minSdk = "37"
+targetSdk = "37"
+compileSdk = "37"
+compileSdkMinor = "1"
+
+agp = "9.5.2"
+kotlin = "2.4.21"
+ksp = "2.3.14"
+hilt = "2.60.1"
+composeBom = "2026.11.01"
+activityCompose = "1.13.0"
+navigation3 = "1.2.2"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-navigation3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "navigation3" }
+androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

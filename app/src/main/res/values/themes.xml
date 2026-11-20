@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fundo escuro da janela, para nao piscar branco antes do Compose desenhar. -->
+    <style name="Theme.Eyrie" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
