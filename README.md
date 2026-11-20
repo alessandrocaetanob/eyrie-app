@@ -13,6 +13,8 @@ Requer JDK 17 ou mais novo (o projeto compila para Java 17) e o Android SDK com 
 
 O APK sai em `app/build/outputs/apk/debug/`. Crie `local.properties` com `sdk.dir=<caminho do SDK>`.
 
+A CI (`.github/workflows/ci.yml`) roda `./gradlew test assembleDebug` com JDK 25 em todo push e pull request para `main` e publica o APK de debug como artefato do workflow.
+
 ## Módulos
 
 | Módulo | Tipo | Depende de |
